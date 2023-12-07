@@ -48,6 +48,7 @@ window.addEventListener('dblclick', () => {
 
 
 const cubeTweaks = gui.addFolder('Cubes')
+cubeTweaks.close()
 const cubeGroupTweaks = gui.addFolder('Cube Group')
 
 
