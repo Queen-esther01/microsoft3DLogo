@@ -8,6 +8,7 @@ import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'
 const gui = new GUI({
     title: 'Tweak Microsoft Logo'
 })
+gui.close()
 
 const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene();
@@ -85,7 +86,6 @@ cubeTweaks1.add(box1.position, 'x').min(-3).max(3).name('Position Horizontal')
 cubeTweaks1.add(box1.position, 'y').min(-3).max(3).name('Position Vertical')
 cubeTweaks1.add(box1.scale, 'x').min(-3).max(3).name('Stretch Horizontal')
 cubeTweaks1.add(box1.scale, 'y').min(-3).max(3).name('Stretch Horizontal')
-cubeTweaks1.close()
 
 
 
@@ -105,7 +105,7 @@ cubeTweaks2.add(box1.position, 'x').min(-3).max(3).name('Position Horizontal')
 cubeTweaks2.add(box1.position, 'y').min(-3).max(3).name('Position Vertical')
 cubeTweaks2.add(box1.scale, 'x').min(-3).max(3).name('Stretch Horizontal')
 cubeTweaks2.add(box1.scale, 'y').min(-3).max(3).name('Stretch Horizontal')
-cubeTweaks2.close()
+
 
 
 const box3material = new THREE.MeshBasicMaterial({ color: debugObject.box3Color })
@@ -124,7 +124,7 @@ cubeTweaks3.add(box1.position, 'x').min(-3).max(3).name('Position Horizontal')
 cubeTweaks3.add(box1.position, 'y').min(-3).max(3).name('Position Vertical')
 cubeTweaks3.add(box1.scale, 'x').min(-3).max(3).name('Stretch Horizontal')
 cubeTweaks3.add(box1.scale, 'y').min(-3).max(3).name('Stretch Horizontal')
-cubeTweaks3.close()
+
 
 
 const box4material = new THREE.MeshBasicMaterial({ color: debugObject.box4Color })
@@ -143,7 +143,7 @@ cubeTweaks4.add(box1.position, 'x').min(-3).max(3).name('Position Horizontal')
 cubeTweaks4.add(box1.position, 'y').min(-3).max(3).name('Position Vertical')
 cubeTweaks4.add(box1.scale, 'x').min(-3).max(3).name('Stretch Horizontal')
 cubeTweaks4.add(box1.scale, 'y').min(-3).max(3).name('Stretch Horizontal')
-cubeTweaks4.close()
+
 
 
 const fontLoader = new FontLoader()
@@ -179,7 +179,6 @@ fontLoader.load(
         text.add(textMesh.position, 'y').min(-3).max(3).name('Position Vertical')
         text.add(textMesh.scale, 'x').min(-3).max(3).name('Stretch Horizontal')
         text.add(textMesh.scale, 'y').min(-3).max(3).name('Stretch Horizontal')
-        text.close()
         scene.add(textMesh)
     }
 )
