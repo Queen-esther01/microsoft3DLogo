@@ -10,7 +10,7 @@ body
     overflow: hidden;
 }
 
-.webgl, .kaito
+.webgl
 {
     position: fixed;
     top: 0;
@@ -18,25 +18,3 @@ body
     outline: none;
 }
 
-.lil-gui {
-	--background-color: lavender;
-    --text-color: rebeccapurple;
-    --title-background-color: rebeccapurple;
-    --title-text-color: lavender;
-    --widget-color: rebeccapurple;
-    --widget-border-radius: 5px;
-    --widget-padding: 10px 0 10px 10px;
-    --color-input-width: 40%;
-}
-.lil-gui.autoPlace.root {
-    border-radius: 8px;
-    margin-top: 10px;
-}
-.lil-gui .title {
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    padding: 0 0 10px 10px;
-}
-.lil-gui input {
-    color: white;
-}
